@@ -103,6 +103,7 @@ func Provider() *schema.Provider {
 		},
 
 		ResourcesMap: map[string]*schema.Resource{
+			"vsphere_alarm":                                    resourceVSphereAlarm(),
 			"vsphere_compute_cluster":                          resourceVSphereComputeCluster(),
 			"vsphere_compute_cluster_host_group":               resourceVSphereComputeClusterHostGroup(),
 			"vsphere_compute_cluster_vm_affinity_rule":         resourceVSphereComputeClusterVMAffinityRule(),
